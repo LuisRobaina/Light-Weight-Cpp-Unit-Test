@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		516EC874228F003900149203 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 516EC873228F003900149203 /* main.cpp */; };
+		516EC87C228F006400149203 /* UTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 516EC87B228F006400149203 /* UTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5110132322910A75007FEFFB /* ctml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ctml.h; sourceTree = "<group>"; };
 		516EC870228F003900149203 /* UnitTestLibrary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTestLibrary; sourceTree = BUILT_PRODUCTS_DIR; };
 		516EC873228F003900149203 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		516EC87A228F005300149203 /* UTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTest.h; sourceTree = "<group>"; };
+		516EC87B228F006400149203 /* UTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UTest.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				516EC873228F003900149203 /* main.cpp */,
+				516EC87A228F005300149203 /* UTest.h */,
+				516EC87B228F006400149203 /* UTest.cpp */,
+				5110132322910A75007FEFFB /* ctml.h */,
 			);
 			path = UnitTestLibrary;
 			sourceTree = "<group>";
@@ -119,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				516EC874228F003900149203 /* main.cpp in Sources */,
+				516EC87C228F006400149203 /* UTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
