@@ -23,6 +23,7 @@ int main(int argc, const char * argv[]) {
     unit.test("Fib Test Negative 2", fib(-2) == -1);
     unit.test("Fib Test 7", fib(7) == 13);
     unit.test("Fib Test 8", fib(8) == 21);
+    unit.test("Fib Test 9", fib(9) == 34);
     
     // Generates an HTML report of all performed tests.
     unit.report();

@@ -42,11 +42,11 @@ void UTest::report() {
     
 }
 
-UTest::UTest(std::string tstr) {
+UTest::UTest(const std::string & tstr) {
     init(tstr);
 }
 
-void UTest::init(std::string tstr ){
+void UTest::init(const std::string & tstr ){
     _tstr = tstr;
     _pass_count = _fail_count = 0;
 }
@@ -55,11 +55,9 @@ void UTest::test( const char * description, const int flag) {
     const char * pf = nullptr;
     
     if(flag){
-        pf = _passString;
         ++_pass_count;
     }
     else {
-        pf = _failedString;
         ++_fail_count;
     }
     // Provide details about test

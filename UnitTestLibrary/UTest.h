@@ -42,7 +42,7 @@ class Test {
 public:
     std::string _title;
     const int _passed;
-    Test(std::string title, const int passed) : _title(title) , _passed(passed) {}
+    Test(const std::string & title, const int & passed) : _title(title) , _passed(passed) {}
 };
 
 
@@ -60,14 +60,14 @@ class UTest {
 
 public:
    
-    UTest(std::string);
-    void init(std::string);
+    explicit UTest(const std::string &);
+    void init(const std::string &);
     bool summary (bool flag) {return _summary_flag = flag;}
     bool summary() {return _summary_flag;}
     unsigned long int pass_count() const {return _pass_count;}
     unsigned long int fail_count() const {return _fail_count;}
     static const char * version() {return __UTest_VERSION;}
-    void test ( const char * description, const int flag);
+    void test (const char * description, const int flag);
     void report();
 };
 
